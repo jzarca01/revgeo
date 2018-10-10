@@ -1,0 +1,14 @@
+{
+  "name": "revgeo",
+  "version": "1.0.0",
+  "description": "Async reverse-geocoding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jérémie Zarca <jeremie.zarca@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}

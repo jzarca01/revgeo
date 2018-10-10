@@ -1,0 +1,48 @@
+# Revgeo
+
+Async reverse-geocoding
+
+## Usage
+
+```javascript
+const { reverse } = require('revgeo')
+
+const geo = await reverse({
+            latitude: 51.50354,
+            longitude: -0.12768
+        })
+```
+
+## Results
+
+```
+{ statename: {},
+  distance: '0',
+  elevation: '20',
+  state: 'UK',
+  latt: '51.50354',
+  city: 'LONDON',
+  prov: 'UK',
+  geocode: 'LONDON-2N990',
+  country: 'United Kingdom',
+  stnumber: '10',
+  staddress: 'DOWNING STREET',
+  inlatt: '51.50354',
+  alt:
+   { loc:
+      { staddress: 'DOWNING STREET',
+        stnumber: '10',
+        longt: '-0.12768',
+        prov: 'UK',
+        city: 'LONDON',
+        postal: 'SW1A 2AA',
+        latt: '51.50354' } },
+  timezone: 'Europe/London',
+  region: 'Greater London, England',
+  postal: 'SW1A 2AA',
+  longt: '-0.12768',
+  remaining_credits: {},
+  confidence: '1',
+  inlongt: '-0.12768',
+  altgeocode: 'SYNERGY-2N990' }
+```
